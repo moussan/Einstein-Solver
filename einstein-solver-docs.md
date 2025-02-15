@@ -65,19 +65,52 @@ The Einstein Field Equations (EFE) Solver is a Python-based application designed
 - numpy ≥ 1.23.0: Numerical computations
 
 ## Setup & Installation
-
 ### Basic Installation
+To install the software, you'll need to install it from the source code. Here's how to do it:
+
+1. First, create and navigate to a new directory:
+```bash
+mkdir einstein_solver
+cd einstein_solver
+```
+
+2. Create all the files I provided earlier:
+   - Create the directory structure:
+   ```bash
+   mkdir einstein_solver
+   touch __init__.py
+   touch einstein_solver/__init__.py
+   ```
+   
+   - Create all the Python files (main.py, gui.py, analyzer.py, utils.py)
+   - Create requirements.txt and setup.py with the content provided
+
+3. Install the dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+4. Install the package in development mode:
+```bash
+pip install -e .
+```
+
+After this, you should be able to run the solver using:
+```bash
+python run.py
+```
+
+**Note that this is a local development setup - the software is not currently distributed as a package.**
+
+### Other Installation
 ```bash
 # Create a virtual environment
 python -m venv venv
 source venv/bin/activate  # Linux/macOS
 venv\Scripts\activate     # Windows
 
-# Install from PyPI
-pip install einstein-solver
-
 # Or install from source
-git clone https://github.com/yourusername/einstein-solver.git
+git clone https://github.com/moussan/einstein-solver.git
 cd einstein-solver
 pip install -e .
 ```
